@@ -1,0 +1,273 @@
+.footer {
+  background: #000000;
+  padding: 200px 20px 80px; /* طويل قوي من فوق */
+  color: white;
+  border-radius: 30px 30px 30px 30px;
+  margin-top: 0; /* أزلنا الـ margin */
+}
+
+.footer-container {
+  max-width: 1400px; /* كبرنا الكونتينر */
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 0.8fr 1.2fr;
+  gap: 60px; /* كبرنا المسافات بين الأقسام */
+  margin-bottom: 40px;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+}
+
+/* الشعار - كبرنا قوي */
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.footer-logo-img {
+  width: 80px; /* كبرنا اللوجو */
+  height: 80px;
+}
+
+.footer-logo-text {
+  font-size: 64px; /* كبرنا كلمة فارما قوي */
+  font-weight: bold;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.logo-section:hover .footer-logo-text {
+  color: #8a2be2;
+}
+
+/* النشرة البريدية - كبرنا */
+.newsletter-title {
+  font-size: 20px; /* كبرنا العنوان */
+  font-weight: 600;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.email-input {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.email-field {
+  flex: 1;
+  padding: 16px 25px; /* كبرنا الانبوت */
+  border: none;
+  border-radius: 30px;
+  font-size: 16px; /* كبرنا الخط */
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.email-field::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.email-field:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.subscribe-btn {
+  padding: 25px; /* كبرنا الزر الدائري */
+  background: #fdf485;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subscribe-btn:hover {
+  background: #5c45bf;
+  transform: scale(1.05);
+}
+
+.send-icon {
+  font-size: 24px; /* كبرنا الأيقونة */
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.subscribe-btn:hover .send-icon {
+  color: white;
+}
+
+/* التنقل - كبرنا */
+.navigation-section {
+  margin-left: 40px; /* أبعدنا أكثر */
+}
+
+.section-title {
+  font-size: 22px; /* كبرنا العناوين */
+  font-weight: 600;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.nav-arrow {
+  font-size: 18px; /* كبرنا السهم */
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px; /* كبرنا الخط */
+  transition: color 0.3s ease;
+}
+
+.nav-links li:hover a {
+  color: #fdf485;
+}
+
+.nav-links li:hover .nav-arrow {
+  color: #fdf485;
+}
+
+/* معلومات الاتصال - كبرنا */
+.contact-info {
+  margin-bottom: 30px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
+  font-size: 16px; /* كبرنا الخط */
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.contact-item a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px; /* كبرنا الخط */
+}
+
+.contact-item:hover {
+  color: #fdf485;
+}
+
+.contact-icon {
+  font-size: 20px; /* كبرنا الأيقونات */
+  color: white;
+  margin-top: 2px;
+  flex-shrink: 0;
+  transition: color 0.3s ease;
+}
+
+.contact-item:hover a,
+.contact-item:hover .contact-icon,
+.contact-item:hover span {
+  color: #fdf485;
+}
+
+.address-link {
+  cursor: pointer;
+}
+
+/* أيقونات السوشيال ميديا - كبرنا */
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.social-icon {
+  width: 50px; /* كبرنا الأيقونات */
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #444; /* كبرنا البوردر */
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  font-size: 22px; /* كبرنا الأيقونات */
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-5px);
+  background: #5c45bf;
+  color: white;
+  border-color: #5c45bf;
+}
+
+/* قسم الكوبي رايت - كبرنا */
+.copyright-section {
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+  padding-top: 25px;
+  text-align: center;
+}
+
+.copyright {
+  font-size: 16px; /* كبرنا الخط */
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+  font-weight: 300;
+}
+
+/* التصميم المتجاوب */
+@media (max-width: 768px) {
+  .footer {
+    padding: 100px 15px 30px;
+  }
+  
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    max-width: 100%;
+  }
+  
+  .footer-logo-text {
+    font-size: 48px;
+  }
+  
+  .footer-logo-img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .navigation-section {
+    margin-left: 0;
+  }
+  
+  .email-input {
+    flex-direction: column;
+  }
+  
+  .subscribe-btn {
+    width: 70px;
+    height: 70px;
+    align-self: center;
+  }
+}
